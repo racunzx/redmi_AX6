@@ -20,9 +20,9 @@ sed -i '/uci commit system/i\uci set system.@system[0].hostname='MiWIFI'' packag
 sed -i "s/OpenWrt /星新课代表 /g" package/lean/default-settings/files/zzz-default-settings
 
 #更改主机型号，支持中文。 
-sed -i "s/Xiaomi Mi Router 4A Gigabit Edition/星新课代表制作出品/g" target/linux/ramips/dts/mt7621_xiaomi_mi-router-4a-gigabit.dts
+sed -i "s/model = "Redmi AX6"/model = "新星课代表制作出品"/g" target/linux/ipq807x/files/arch/arm64/boot/dts/qcom/ipq8071-ax6.dts
 
-sed -i "s/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=5.10/g" target/linux/ramips/Makefile
+#sed -i "s/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=5.10/g" target/linux/ramips/Makefile
 
 #删除原默认主题
 rm -rf package/lean/luci-theme-argon
